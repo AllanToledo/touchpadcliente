@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/screen"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="160dp"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        android:hint="@string/hint_ip"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorAccentLigth"
+        android:textColor="@color/colorAccentLigth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        android:hint="@string/port"
+        android:textAlignment="center"
+        android:layout_marginStart="5dp"
+        android:textColorHint="@color/colorAccentLigth"
+        android:textColor="@color/colorAccentLigth"
+        app:layout_constraintStart_toEndOf="@+id/address"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ToggleButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:textOn="@string/shutdown_touchpad"
+        android:textOff="@string/start_touchpad"
+        android:layout_marginStart="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorAccentLigth"
+        app:layout_constraintStart_toEndOf="@+id/port"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

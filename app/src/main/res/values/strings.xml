@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RemoteTouchpad</string>
+    <string name="hint_ip">Ip Host</string>
+    <string name="start_touchpad">Ligar Touchpad</string>
+    <string name="shutdown_touchpad">Desligar Touchpad</string>
+    <string name="port">Port</string>
+</resources>
